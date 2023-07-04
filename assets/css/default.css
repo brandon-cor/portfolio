@@ -10,7 +10,7 @@
 }
 
 header {
-  background-color: transparent;
+  background-color: var(--mainColor);
   color: #333;
   padding: 20px;
 }

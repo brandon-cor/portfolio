@@ -65,7 +65,7 @@
 			<div class="main-container">
 				<div class="about-wrapper">
 					<div class="about-me" id="about-me">
-						<h4>MORE ABOUT ME</h4>
+						<h4>ABOUT ME</h4>
 						<p>
 							I am currently pursuing personal projects such as this portfolio
 							webpage to display my projects and advertise my business.
@@ -80,7 +80,7 @@
 							interested in my private Python sessions!
 						</p>
 						<hr />
-						<h4>TOP EXPERTISE</h4>
+						<h4>SKILLS</h4>
 						<p>Fullstack developer with expert abilities in:</p>
 						<div id="skills">
 							<ul>
@@ -188,22 +188,35 @@
 				</div>
 			</div>
 		</section>
+		<?php
+  $name = $_POST['name'];
+  $subject = $_POST['subject'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+
+  $to = '15brandon51@gmail.com';
+  $headers = "From: $email";
+
+  mail($to, $subject, $message, $headers);
+  ?>
+
 		<section class="s1">
 			<div class="main-container">
-				<h3 style="text-align: center">Get in touch with me!</h3>
-				<form id="contact-form">
-					<label>Name</label>
-					<input class="input-field" type="text" name="name" />
-					<label>Subject</label>
-					<input class="input-field" type="text" name="subject" />
-					<label>Email</label>
-					<input class="input-field" type="text" name="email" />
-					<label>Message</label>
-					<textarea class="input-field" type="text" name="Message"></textarea>
-					<input id="submit-btn" type="submit" value="Send" />
-				</form>
+					<h3 style="text-align: center">Get in touch with me!</h3>
+					<form id="contact-form" action="send_email.php" method="post">
+							<label>Name</label>
+							<input class="input-field" type="text" name="name" required />
+							<label>Subject</label>
+							<input class="input-field" type="text" name="subject" required />
+							<label>Email</label>
+							<input class="input-field" type="email" name="email" required />
+							<label>Message</label>
+							<textarea class="input-field" name="message" required></textarea>
+							<input id="submit-btn" type="submit" value="Send" />
+					</form>
 			</div>
-		</section>
+	</section>
+	
 		<footer>
 			<div class="footer-content">
 				<p>© 2023 Brandon Corona Bhardwaj. All rights reserved.</p>

@@ -13,6 +13,32 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/default.css" />
 		<title>Web Design & Private Tutoring</title>
+		<script>
+      const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => {
+            // Display a success alert
+            alert("Thank you for your submission");
+          })
+          .catch((error) => {
+            // Display an error alert
+            alert(error);
+          });
+      };
+
+      document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
+    </script>
 	</head>
 	
 	<body>

@@ -9,6 +9,20 @@
   --buttonColor:black;
 }
 
+#greeting-wrapper {
+  border-right: 0.08em solid;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: black;
+  }
+}
+
 .book-session {
   text-align: right; /* Aligns the content to the right */
 }

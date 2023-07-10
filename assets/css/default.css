@@ -48,9 +48,7 @@ nav {
 }
 
 .book-session {
-  display: flex;
   justify-content: flex-end; /* Align the content to the right */
-  margin-top: 20px; /* Add some spacing from the top */
 }
 
 .book-session-button {

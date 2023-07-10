@@ -10,8 +10,11 @@
 }
 
 .hamburger {
-  font-size: 2em;
+  font-size: 2em; /* Adjust as needed */
   display: none;
+  background: none; /* Remove default button background */
+  color: black; /* Make the button black */
+  border: none; /* Remove the border */
 }
 
 /* Show the hamburger menu and hide the regular menu on smaller screens */

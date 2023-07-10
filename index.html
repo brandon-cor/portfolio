@@ -44,6 +44,8 @@
 	<body>
 		<header>
 			<nav>
+				<button class="hamburger">☰</button>
+
 				<ul>
 					<li><a href="#about-me">About Me</a></li>
 					<li><a href="#post">Projects</a></li>
@@ -245,6 +247,20 @@
 			}
 			
 			typeWriter();
+			</script>
+			<script>
+				// Get the hamburger menu button and the navigation list
+				const hamburger = document.querySelector('.hamburger');
+				const navList = document.querySelector('nav ul');
+		
+				// Toggle the display of the navigation list when the hamburger menu is clicked
+				hamburger.addEventListener('click', () => {
+					if (navList.style.display === 'none') {
+						navList.style.display = 'block';
+					} else {
+						navList.style.display = 'none';
+					}
+				});
 			</script>
 	</body>
 </html>

@@ -9,6 +9,20 @@
   --buttonColor:black;
 }
 
+.hamburger {
+  display: none;
+}
+
+/* Show the hamburger menu and hide the regular menu on smaller screens */
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
 #greeting-wrapper {
   border-right: 0.08em solid;
   animation: blink 1s step-end infinite;

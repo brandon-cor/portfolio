@@ -50,7 +50,7 @@ nav {
 .book-session {
   justify-content: flex-end; /* Align the content to the right */
 }
-
+   
 .book-session-button {
   display: inline-block;
   padding: 10px 20px;

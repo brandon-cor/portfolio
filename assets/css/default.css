@@ -72,7 +72,6 @@ header {
   background-color: var(--mainColor);
   color: #333;
   padding: 20px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -429,16 +428,6 @@ ul {
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
-}
-
-#nav-menu ul, #nav-menu .book-session {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  #nav-menu ul, #nav-menu .book-session {
-      display: block;
-  }
 }
 
 @media screen and (max-width: 800px) {

@@ -430,6 +430,16 @@ ul {
   border: none;
 }
 
+#nav-menu ul, #nav-menu .book-session {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #nav-menu ul, #nav-menu .book-session {
+      display: block;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .intro-wrapper {
     grid-template-columns: 1fr;

@@ -13,6 +13,24 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/default.css" />
 		<title>Web Design & Private Tutoring</title>
+	</head>
+
+	<body>
+		<header>
+			<nav id="nav-menu"></nav>
+				<button class="hamburger">☰</button>
+
+				<ul>
+					<li><a href="#about-me">About Me</a></li>
+					<li><a href="#post">Projects</a></li>
+					<li><a href="#tutoring">Tutoring</a></li>
+					<li><a href="#contact-form">Contact</a></li>
+				</ul>
+				<div class="book-session">
+					<a href="#tutoring" class="book-session-button">Book a Session</a>
+				</div>
+			</nav>
+		</header>
 		<script>
 			const handleSubmit = (event) => {
 				event.preventDefault();
@@ -34,27 +52,22 @@
 						alert(error);
 					});
 			};
+			
+			const toggleMenu = () => {
+			    const navMenuItems = document.querySelectorAll('#nav-menu ul, #nav-menu .book-session');
+			    navMenuItems.forEach(item => {
+			        item.style.display = item.style.display === 'none' ? 'block' : 'none';
+			    });
+			};
 
-			document.querySelector('form').addEventListener('submit', handleSubmit);
+			document.addEventListener("DOMContentLoaded", function() {
+			    // Your existing form submission code
+			    document.querySelector('form').addEventListener('submit', handleSubmit);
+
+			    // Your new hamburger menu click event
+			    document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+			});
 		</script>
-	</head>
-
-	<body>
-		<header>
-			<nav>
-				<button class="hamburger">☰</button>
-
-				<ul>
-					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#post">Projects</a></li>
-					<li><a href="#tutoring">Tutoring</a></li>
-					<li><a href="#contact-form">Contact</a></li>
-				</ul>
-				<div class="book-session">
-					<a href="#tutoring" class="book-session-button">Book a Session</a>
-				</div>
-			</nav>
-		</header>
 
 		<section class="s1">
 			<div class="main-container">

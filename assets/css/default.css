@@ -175,6 +175,12 @@ ul {
   overflow: auto;
 }
 
+#rotating-text {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px; /* add space above the rotating text */
+}
+
 /* Centers the content */
 .main-container {
   width: 1200px;

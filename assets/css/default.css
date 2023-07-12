@@ -188,6 +188,10 @@ ul {
   justify-content: center;
 }
 
+#greeting-wrapper{
+  margin-bottom:15px;
+}
+
 .intro-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);

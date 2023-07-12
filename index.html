@@ -13,30 +13,6 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/default.css" />
 		<title>Web Design & Private Tutoring</title>
-		<script>
-			const handleSubmit = (event) => {
-				event.preventDefault();
-
-				const myForm = event.target;
-				const formData = new FormData(myForm);
-
-				fetch('/', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-					body: new URLSearchParams(formData).toString(),
-				})
-					.then(() => {
-						// Display a success alert
-						alert('Thank you for your submission');
-					})
-					.catch((error) => {
-						// Display an error alert
-						alert(error);
-					});
-			};
-
-			document.querySelector('form').addEventListener('submit', handleSubmit);
-		</script>
 	</head>
 
 	<body>
@@ -243,22 +219,6 @@
 				<p>Contact: 15brandon51@gmail.com</p>
 			</div>
 		</footer>
-		<script>
-			let i = 0;
-			const text = "Hi, I'm Brandon."; /* The text */
-			const speed = 100; /* The speed/duration of the effect in milliseconds */
-
-			function typeWriter() {
-				if (i < text.length) {
-					document.getElementById('greeting-wrapper').innerHTML +=
-						text.charAt(i);
-					i++;
-					setTimeout(typeWriter, speed);
-				}
-			}
-
-			typeWriter();
-		</script>
 		<script>
 			// Get the hamburger menu button and the navigation list
 			const hamburger = document.querySelector('.hamburger');

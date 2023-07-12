@@ -33,11 +33,6 @@ nav {
   }
 }
 
-#greeting-wrapper {
-  border-right: 0.08em solid;
-  animation: blink 1s step-end infinite;
-}
-
 @keyframes blink {
   from, to {
     border-color: transparent;

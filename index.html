@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@500&display=swap"
 			rel="stylesheet"
@@ -14,33 +14,31 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/default.css" />
 		<title>Web Design & Private Tutoring</title>
 		<script>
-      const handleSubmit = (event) => {
-        event.preventDefault();
+			const handleSubmit = (event) => {
+				event.preventDefault();
 
-        const myForm = event.target;
-        const formData = new FormData(myForm);
+				const myForm = event.target;
+				const formData = new FormData(myForm);
 
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then(() => {
-            // Display a success alert
-            alert("Thank you for your submission");
-          })
-          .catch((error) => {
-            // Display an error alert
-            alert(error);
-          });
-      };
+				fetch('/', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+					body: new URLSearchParams(formData).toString(),
+				})
+					.then(() => {
+						// Display a success alert
+						alert('Thank you for your submission');
+					})
+					.catch((error) => {
+						// Display an error alert
+						alert(error);
+					});
+			};
 
-      document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
-    </script>
+			document.querySelector('form').addEventListener('submit', handleSubmit);
+		</script>
 	</head>
-	
+
 	<body>
 		<header>
 			<nav>
@@ -59,7 +57,7 @@
 		</header>
 
 		<section class="s1">
-			<div class="main-container">		
+			<div class="main-container">
 				<div class="greeting-wrapper">
 					<h1 id="greeting-wrapper"></h1>
 				</div>
@@ -104,9 +102,9 @@
 							webpage to display my projects and advertise my business.
 						</p>
 						<p>
-							Although I am currently associated with the UCSC Admissions
-							team, I still take interviews in search of a new project that
-							interests me.
+							Although I am currently associated with the UCSC Admissions team,
+							I still take interviews in search of a new project that interests
+							me.
 						</p>
 						<hr />
 						<h4>SKILLS</h4>
@@ -146,7 +144,7 @@
 			</div>
 		</section>
 		<section class="s1">
-			<div class="main-container" id="post"">
+			<div class="main-container" id="post">
 				<h3 style="text-align: center"></h3>
 				<div class="post-wrapper">
 					<div class="post">
@@ -156,9 +154,8 @@
 						<div class="language-preview">
 							<p class="post-intro">
 								As a front-end developer at UCSC, I have consistently leveraged
-								my expertise in Drupal to maintain  the
-								website while also demonstrating the ability to
-								aesthetically organizing content.
+								my expertise in Drupal to maintain the website while also
+								demonstrating the ability to aesthetically organizing content.
 							</p>
 						</div>
 					</div>
@@ -168,8 +165,8 @@
 						</div>
 						<div class="language-preview">
 							<p class="post-intro">
-								As a teacher at theCoderSchool&trade;, I utilized my expertise in
-								Python to create engaging video games and applications, while
+								As a teacher at theCoderSchool&trade;, I utilized my expertise
+								in Python to create engaging video games and applications, while
 								also sharing my knowledge through teaching. I have honed my
 								Python, C, and Assembly skills through multiple courses at UCSC,
 								solidifying my foundation.
@@ -198,35 +195,48 @@
 					<div class="tutoring-info">
 						<h3 style="text-align: center">Offering Private Tutoring!</h3>
 						<p>
-							I'm passionate about teaching Python, a language known for its popularity and beginner-friendly nature. I've successfully taught students of all ages, from first graders to adults. But my expertise isn't limited to Python. I'm well-versed in various programming languages and can provide assistance across different areas of programming. So, whether you need help with Python or any other language, I offer personalized tutoring services tailored to your or your child's specific needs and goals.
-					</p>
-					
-					<p>
-							I charge $40 for 2-on-1 sessions and $50 for 1-on-1 sessions. To put that into perspective, most larger businesses can charge up to $600 per month or $150 per session if you commit to weekly lessons. My goal is to provide quality lessons at a reasonable price.
-					</p>
-					
-					<p>
-							If you're interested in my tutoring services or if you have any questions, don't hesitate to get in touch. You can reach out to me through the contact form below or directly email me at 15brandon51@gmail.com.
-					</p>
-					
+							I'm passionate about teaching Python, a language known for its
+							popularity and beginner-friendly nature. I've successfully taught
+							students of all ages, from first graders to adults. But my
+							expertise isn't limited to Python. I'm well-versed in various
+							programming languages and can provide assistance across different
+							areas of programming. So, whether you need help with Python or any
+							other language, I offer personalized tutoring services tailored to
+							your or your child's specific needs and goals.
+						</p>
+
+						<p>
+							I charge $40 for 2-on-1 sessions and $50 for 1-on-1 sessions. To
+							put that into perspective, most larger businesses can charge up to
+							$600 per month or $150 per session if you commit to weekly
+							lessons. My goal is to provide quality lessons at a reasonable
+							price.
+						</p>
+
+						<p>
+							If you're interested in my tutoring services or if you have any
+							questions, don't hesitate to get in touch. You can reach out to me
+							through the contact form below or directly email me at
+							15brandon51@gmail.com.
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="s1">
 			<div class="main-container">
-					<h3 style="text-align: center">Get in touch with me!</h3>
-					<form id="contact-form" method="POST" data-netlify="true" netlify>
-							<label>Name</label>
-							<input class="input-field" type="text" name="name" required />
-							<label>Email</label>
-							<input class="input-field" type="email" name="email" required />
-							<label>Message</label>
-							<textarea class="input-field" name="message" required></textarea>
-							<input id="submit-btn" type="submit" value="Send" />
-					</form>
+				<h3 style="text-align: center">Get in touch with me!</h3>
+				<form id="contact-form" method="POST" data-netlify="true" netlify>
+					<label>Name</label>
+					<input class="input-field" type="text" name="name" required />
+					<label>Email</label>
+					<input class="input-field" type="email" name="email" required />
+					<label>Message</label>
+					<textarea class="input-field" name="message" required></textarea>
+					<input id="submit-btn" type="submit" value="Send" />
+				</form>
 			</div>
-	</section>
+		</section>
 		<footer>
 			<div class="footer-content">
 				<p>© 2023 Brandon Corona Bhardwaj. All rights reserved.</p>
@@ -235,32 +245,33 @@
 		</footer>
 		<script>
 			let i = 0;
-			const text = 'Hi, I\'m Brandon.'; /* The text */
+			const text = "Hi, I'm Brandon."; /* The text */
 			const speed = 100; /* The speed/duration of the effect in milliseconds */
-			
+
 			function typeWriter() {
 				if (i < text.length) {
-					document.getElementById("greeting-wrapper").innerHTML += text.charAt(i);
+					document.getElementById('greeting-wrapper').innerHTML +=
+						text.charAt(i);
 					i++;
-					setTimeout(typeWriter, speed); 
+					setTimeout(typeWriter, speed);
 				}
 			}
-			
+
 			typeWriter();
-			</script>
-			<script>
-				// Get the hamburger menu button and the navigation list
-				const hamburger = document.querySelector('.hamburger');
-				const navList = document.querySelector('nav ul');
-		
-				// Toggle the display of the navigation list when the hamburger menu is clicked
-				hamburger.addEventListener('click', () => {
-					if (navList.style.display === 'none') {
-						navList.style.display = 'block';
-					} else {
-						navList.style.display = 'none';
-					}
-				});
-			</script>
+		</script>
+		<script>
+			// Get the hamburger menu button and the navigation list
+			const hamburger = document.querySelector('.hamburger');
+			const navList = document.querySelector('nav ul');
+
+			// Toggle the display of the navigation list when the hamburger menu is clicked
+			hamburger.addEventListener('click', () => {
+				if (navList.style.display === 'none') {
+					navList.style.display = 'block';
+				} else {
+					navList.style.display = 'none';
+				}
+			});
+		</script>
 	</body>
 </html>

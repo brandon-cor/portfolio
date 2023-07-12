@@ -48,7 +48,7 @@ nav {
 }
 
 .book-session {
-  justify-content: flex-end; /* Align the content to the right */
+  text-align: right; /* Align the content to the right */
 }
    
 .book-session-button {

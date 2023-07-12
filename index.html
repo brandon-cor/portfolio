@@ -35,7 +35,9 @@
 		<section class="s1">
 			<div class="main-container">
 				<div class="greeting-wrapper">
-					<h1 id="greeting-wrapper">Hi, I'm Brandon</h1>
+					<h1 id="greeting-wrapper">
+						Hi, I'm Brandon<span id="rotating-text"></span>
+					</h1>
 				</div>
 				<div class="intro-wrapper">
 					<div class="nav-wrapper">
@@ -219,6 +221,51 @@
 				<p>Contact: 15brandon51@gmail.com</p>
 			</div>
 		</footer>
+		<script>
+			const phrases = ['Web Developer', 'Python Tutor'];
+			let phraseIndex = 0;
+			let letterIndex = 0;
+			let currentPhrase = [];
+			let isDeleting = false;
+			let isEndOfPhrase = false;
+
+			function type() {
+				let speed = isDeleting ? 70 : 120; // speed of typing: deleting is faster
+				const rotatingTextElement = document.getElementById('rotating-text');
+
+				if (isEndOfPhrase) {
+					rotatingTextElement.innerHTML = currentPhrase.join(''); // reset the text
+					isDeleting = false; // start typing again
+					isEndOfPhrase = false; // reset end of phrase
+				} else if (isDeleting && letterIndex <= 0) {
+					// end of deleting a phrase
+					isEndOfPhrase = true; // mark end of phrase
+					phraseIndex = (phraseIndex + 1) % phrases.length; // go to next phrase
+				} else if (!isDeleting && letterIndex === phrases[phraseIndex].length) {
+					// end of typing a phrase
+					isDeleting = true; // start deleting
+					speed *= 2; // pause before start deleting
+				}
+
+				if (isDeleting) {
+					// delete one letter
+					currentPhrase.pop();
+					letterIndex--;
+				} else {
+					// type one letter
+					currentPhrase.push(phrases[phraseIndex][letterIndex]);
+					letterIndex++;
+				}
+
+				rotatingTextElement.innerHTML = currentPhrase.join('');
+				setTimeout(type, speed);
+			}
+
+			window.addEventListener('load', function () {
+				// start typing effect once the window is loaded
+				setTimeout(type, 500);
+			});
+		</script>
 		<script>
 			// Get the hamburger menu button and the navigation list
 			const hamburger = document.querySelector('.hamburger');

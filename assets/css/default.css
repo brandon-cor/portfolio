@@ -454,6 +454,7 @@ ul {
 
 #success-message-container p{
   color:green;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 800px) {

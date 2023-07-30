@@ -420,7 +420,6 @@ ul {
   padding: 15px;
   border-radius: 5px;
   background-color: var(--mainColor);
-  margin-bottom: 50px;
 }
 
 #contact-form label{
@@ -452,7 +451,6 @@ ul {
 
 #success-message-container {
   text-align: center;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 800px) {

@@ -416,7 +416,7 @@ ul {
   display:block;
   max-width:600px;
   margin: 0 auto;
-  border: 1xp solid var(--borderColor);
+  border: 1px solid var(--borderColor);
   padding: 15px;
   border-radius: 5px;
   background-color: var(--mainColor);

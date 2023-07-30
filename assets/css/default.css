@@ -416,10 +416,11 @@ ul {
   display:block;
   max-width:600px;
   margin: 0 auto;
-  border: 1px solid var(--borderColor);
+  border: 1xp solid var(--borderColor);
   padding: 15px;
   border-radius: 5px;
   background-color: var(--mainColor);
+  margin-bottom: 50px;
 }
 
 #contact-form label{
@@ -448,9 +449,9 @@ ul {
   background-color: var(--buttonColor);
   border-radius: 10px;
 }
-
 #success-message-container {
   text-align: center;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 800px) {

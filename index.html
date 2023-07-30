@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/assets/images/icons8-computer-xnimrodx-lineal-color-32.png" type="image/x-icon" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:wght@500&display=swap"
 			rel="stylesheet"
@@ -17,9 +17,9 @@
 
 	<body>
 		<header>
-			<nav>
-				<button class="hamburger">☰</button>
+			<button class="hamburger">☰</button>
 
+			<nav>	
 				<ul>
 					<li><a href="#about-me">About Me</a></li>
 					<li><a href="#post">Projects</a></li>
@@ -35,7 +35,7 @@
 		<section class="s1">
 			<div class="main-container">
 				<div class="greeting-wrapper">
-					<h1 id="greeting-wrapper">
+					<h1 id="greeting-wrapper" class="h1-top-right">
 						Hi, I'm Brandon</span>
 					</h1>
 					<p>I do <span id="rotating-text"></span></p>
@@ -60,7 +60,7 @@
 								<div id="preview">
 									<h3>Welcome</h3>
 									<p>
-										I am a Web Developer for the UCSC Admissions page. I also
+										I am a Developer based in California. I currently
 										attend UCSC and am entering my third year as a computer
 										science student.
 									</p>
@@ -281,5 +281,45 @@
 				}
 			});
 		</script>
+		//adds smooth scrolling
+		<script>
+			// Function to handle smooth scrolling
+			function smoothScroll(target, duration) {
+				const targetElement = document.querySelector(target);
+				const targetPosition = targetElement.getBoundingClientRect().top;
+				const startPosition = window.pageYOffset;
+				const distance = targetPosition - startPosition;
+				let startTime = null;
+		
+				function animation(currentTime) {
+					if (startTime === null) startTime = currentTime;
+					const timeElapsed = currentTime - startTime;
+					const run = ease(timeElapsed, startPosition, distance, duration);
+					window.scrollTo(0, run);
+					if (timeElapsed < duration) requestAnimationFrame(animation);
+				}
+		
+				// Easing function for smooth scrolling
+				function ease(t, b, c, d) {
+					t /= d / 2;
+					if (t < 1) return (c / 2) * t * t + b;
+					t--;
+					return (-c / 2) * (t * (t - 2) - 1) + b;
+				}
+		
+				requestAnimationFrame(animation);
+			}
+		
+			// Smooth scroll when clicking on anchor links
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					const target = this.getAttribute('href');
+					const duration = 1000; // Adjust the duration (in milliseconds) as desired
+					smoothScroll(target, duration);
+				});
+			});
+		</script>
+		
 	</body>
 </html>

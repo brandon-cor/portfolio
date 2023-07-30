@@ -27,9 +27,24 @@ nav {
 @media screen and (max-width: 600px) {
   .hamburger {
     display: block;
+    size: 20px;
   }
-  nav ul {
-    display: none;
+  .h1-top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display:block;
+    font-size: small;
+  }
+  .h1-top-right p{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display:block;
+    font-size: small;
+  }
+  header nav {
+    display: none; /* This will hide the entire navigation bar */
   }
 }
 

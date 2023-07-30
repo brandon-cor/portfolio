@@ -447,7 +447,12 @@ ul {
   padding-bottom: 10px;
   color: #fff;
   background-color: var(--buttonColor);
-  border: none;
+  border-radius: 10px;
+}
+
+#success-message-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 800px) {

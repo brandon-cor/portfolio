@@ -21,6 +21,7 @@ nav {
   background: none;
   color: black;
   border: none;
+  padding:10px;
 }
 
 /* Show the hamburger menu and hide the regular menu on smaller screens */

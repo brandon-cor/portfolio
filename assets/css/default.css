@@ -225,6 +225,8 @@ ul {
 
 #greeting-wrapper{
   margin-bottom:15px;
+  flex: 1;
+  margin-left: 10px;
 }
 
 .intro-wrapper {

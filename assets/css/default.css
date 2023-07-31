@@ -24,6 +24,11 @@ nav {
   padding:10px;
 }
 
+.hamburger img {
+  width: 32px; /* Reduce the width of the menu image */
+  height: 32px; /* Reduce the height of the menu image */
+}
+
 /* Show the hamburger menu and hide the regular menu on smaller screens */
 @media screen and (max-width: 700px) {
   .hamburger {

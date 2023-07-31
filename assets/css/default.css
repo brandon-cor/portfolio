@@ -15,7 +15,6 @@ nav {
   align-items: center;
 }
 
-
 .hamburger {
   font-size: 2em;
   display: none;
@@ -33,19 +32,15 @@ nav {
 /* Show the hamburger menu and hide the regular menu on smaller screens */
 @media screen and (max-width: 700px) {
   .hamburger {
-    font-size: 2em;
-    display: none;
-    background: none;
-    color: black;
-    border: none;
+    display: block;
+    size: 20px;
     padding:10px;
   }
-  
   .hamburger img {
     width: 32px; /* Reduce the width of the menu image */
     height: 32px; /* Reduce the height of the menu image */
   }
-
+  
   .h1-top-right {
     position: absolute;
     top: 10px;

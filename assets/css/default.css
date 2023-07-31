@@ -27,6 +27,7 @@ nav {
 .hamburger img {
   width: 32px; /* Reduce the width of the menu image */
   height: 32px; /* Reduce the height of the menu image */
+
 }
 
 /* Show the hamburger menu and hide the regular menu on smaller screens */
@@ -34,7 +35,7 @@ nav {
   .hamburger {
     display: block;
     size: 20px;
-    padding:50px;
+    padding:25px;
   }
   .hamburger img {
     width: 32px; /* Reduce the width of the menu image */

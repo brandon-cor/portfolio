@@ -21,7 +21,7 @@ nav {
   background: none;
   color: black;
   border: none;
-  padding:10px;
+  padding:50px;
 }
 
 .hamburger img {
@@ -34,7 +34,7 @@ nav {
   .hamburger {
     display: block;
     size: 20px;
-    padding:10px;
+    padding:50px;
   }
   .hamburger img {
     width: 32px; /* Reduce the width of the menu image */

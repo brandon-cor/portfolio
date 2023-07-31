@@ -31,16 +31,16 @@ nav {
 }
 
 /* Show the hamburger menu and hide the regular menu on smaller screens */
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .greeting-wrapper h1,
   .greeting-wrapper p {
     display: none;
   }
 
   .mobile-name {
-    display: block; /* Show the "Brandon" text */
+    display: block;
   }
-  
+
   .hamburger {
     display: block;
     size: 20px;
@@ -51,21 +51,7 @@ nav {
     height: 32px; /* Reduce the height of the menu image */
   }
   
-  .h1-top-right {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display:block;
-    font-size: small;
-  }
-  .h1-top-right p{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display:block;
-    font-size: small;
-  }
-  header nav {
+  header nav{
     display: none; /* This will hide the entire navigation bar */
   }
 }
@@ -199,7 +185,6 @@ ul {
 /* overflow property removes the extra space at the top*/
 .s1 {
   background-color: var(--mainColor);
-  border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
 
@@ -233,7 +218,7 @@ ul {
 }
 
 .mobile-name {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute; /* You can adjust the position as needed */
   top: 10px;
   right: 10px;
@@ -392,10 +377,30 @@ nav ul li a:hover {
 }
 
 /*This is meant to make the screen responsive when it's under 1200px*/
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .main-container {
     width: 95%;
   }
+  .intro-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'nav-wrapper'
+      'left-column'
+      'right-column'
+    ;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.s1-nav {
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainColor) /* Set a background color to see the div */
 }
 
 .about-wrapper {
@@ -492,17 +497,6 @@ nav ul li a:hover {
 #success-message-container p{
   color:green;
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 1000px) {
-  .intro-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'nav-wrapper'
-      'left-column'
-      'right-column'
-    ;
-  }
 }
 
 .img-wrapper{

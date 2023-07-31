@@ -38,7 +38,7 @@ nav {
   }
 
   .mobile-name {
-    display: block;
+    display: block; /* Show the "Brandon" text */
   }
 
   .hamburger {
@@ -185,6 +185,7 @@ ul {
 /* overflow property removes the extra space at the top*/
 .s1 {
   background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
 
@@ -218,7 +219,7 @@ ul {
 }
 
 .mobile-name {
-  display: none;
+  visibility: hidden; /* Hidden by default */
   position: absolute; /* You can adjust the position as needed */
   top: 10px;
   right: 10px;
@@ -389,18 +390,6 @@ nav ul li a:hover {
       'right-column'
     ;
   }
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.s1-nav {
-  width: 100%;
-  height: 100%;
-  background-color: var(--mainColor) /* Set a background color to see the div */
 }
 
 .about-wrapper {

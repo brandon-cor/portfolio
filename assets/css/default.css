@@ -35,6 +35,11 @@ nav {
     display: block;
     size: 20px;
   }
+  .hamburger img {
+    width: 32px; /* Reduce the width of the menu image */
+    height: 32px; /* Reduce the height of the menu image */
+  }
+  
   .h1-top-right {
     position: absolute;
     top: 10px;

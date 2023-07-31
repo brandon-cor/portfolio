@@ -210,6 +210,8 @@ ul {
 .main-container {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .greeting-wrapper {
@@ -217,6 +219,8 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  margin-left: 10px;
 }
 
 #greeting-wrapper{

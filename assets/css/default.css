@@ -6,7 +6,7 @@
   --secondaryText: #4b5156;
   --themeDotBorder: #24292e;
   --previewShadow: #f0ead6;
-  --buttonColor:black;
+  --buttonColor: black;
 }
 
 nav {
@@ -21,61 +21,76 @@ nav {
   background: none;
   color: black;
   border: none;
-  padding:50px;
+  padding: 50px;
 }
 
 .hamburger img {
-  width: 32px; /* Reduce the width of the menu image */
-  height: 32px; /* Reduce the height of the menu image */
+  width: 32px;
+  /* Reduce the width of the menu image */
+  height: 32px;
+  /* Reduce the height of the menu image */
 
 }
 
 /* Show the hamburger menu and hide the regular menu on smaller screens */
 @media (max-width: 700px) {
+
   .greeting-wrapper h1,
   .greeting-wrapper p {
     display: none;
   }
 
   .mobile-name {
-    display: block; /* Show the "Brandon" text */
+    display: block;
+    /* Show the "Brandon" text */
   }
 
   .hamburger {
     display: block;
     size: 20px;
-    padding:25px;
+    padding: 25px;
   }
+
   .hamburger img {
-    width: 32px; /* Reduce the width of the menu image */
-    height: 32px; /* Reduce the height of the menu image */
+    width: 32px;
+    /* Reduce the width of the menu image */
+    height: 32px;
+    /* Reduce the height of the menu image */
   }
-  
-  header nav{
-    display: none; /* This will hide the entire navigation bar */
+
+  header nav {
+    display: none;
+    /* This will hide the entire navigation bar */
   }
 }
 
 @keyframes blink {
-  from, to {
+
+  from,
+  to {
     border-color: transparent;
   }
+
   50% {
     border-color: black;
   }
 }
 
 .book-session {
-  text-align: right; /* Align the content to the right */
+  text-align: right;
+  /* Align the content to the right */
 }
-   
+
 .book-session-button {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #333; /* Font color */
-  background-color: transparent; /* Transparent background */
-  border: 2px solid #333; /* Border */
+  color: #333;
+  /* Font color */
+  background-color: transparent;
+  /* Transparent background */
+  border: 2px solid #333;
+  /* Border */
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: 'Roboto Mono', monospace;
@@ -113,7 +128,7 @@ nav ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -214,16 +229,19 @@ ul {
   justify-content: center;
 }
 
-#greeting-wrapper{
-  margin-bottom:15px;
+#greeting-wrapper {
+  margin-bottom: 15px;
 }
 
 .mobile-name {
-  visibility: hidden; /* Hidden by default */
-  position: absolute; /* You can adjust the position as needed */
+  visibility: hidden;
+  /* Hidden by default */
+  position: absolute;
+  /* You can adjust the position as needed */
   top: 10px;
   right: 10px;
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 18px;
+  /* Adjust font size as needed */
 }
 
 .intro-wrapper {
@@ -236,7 +254,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3em 30em;
-  grid-template-areas: 'nav-wrapper nav-wrapper''left-column right-column';
+  grid-template-areas: 'nav-wrapper nav-wrapper' 'left-column right-column';
 }
 
 .nav-wrapper {
@@ -304,20 +322,20 @@ nav ul li a:hover {
   }
 }
 
-.left-column{
+.left-column {
   grid-area: left-column;
   display: grid;
   align-content: center;
   justify-content: center;
 }
+
 .left-column-pic {
-  -webkit-animation: morph 8s ease-in-out infinite;
+  -webkit-animation: morph 4s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
   background-image: url(/assets/images/Brandon.jpeg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #2d2e32;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   height: 300px;
   position: relative;
@@ -390,23 +408,20 @@ nav ul li a:hover {
 
 #preview {
   width: 260px;
-  border: 2 solid #343535;
-  background-color: #b4b4b4;
+  background-color: var(--mainColor);
   padding: 15px;
-  -webkit-box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
--moz-box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
-box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
+  -webkit-box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
+  -moz-box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
+  box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
 }
 
-#preview h3 {
-  font-weight: 9000;
-}
 
 /*This is meant to make the screen responsive when it's under 1200px*/
 @media (max-width: 1000px) {
   .main-container {
     width: 95%;
   }
+
   .intro-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -421,7 +436,8 @@ box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
 .s1-nav {
   width: 100%;
   height: 100%;
-  background-color: var(--mainColor) /* Set a background color to see the div */
+  background-color: var(--mainColor)
+    /* Set a background color to see the div */
 }
 
 .about-wrapper {
@@ -443,18 +459,18 @@ box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
   border: 2px solid var(--themeDotBorder);
 }
 
-#skills ul li{
+#skills ul li {
   margin-bottom: 5px;
 }
 
-.post img{
+.post img {
   width: 70%;
 }
 
 .post-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
-  gap:20px;
+  gap: 20px;
   justify-content: center;
   text-align: center;
   padding-bottom: 50px;
@@ -475,24 +491,25 @@ box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
 }
 
 
-#contact-form{
-  display:block;
-  max-width:600px;
+#contact-form {
+  display: block;
+  max-width: 600px;
   margin: 0 auto;
   padding: 15px;
   border-radius: 5px;
   background-color: var(--mainColor);
 }
 
-#contact-form label{
+#contact-form label {
   line-height: 2.7em;
 }
 
-#contact-form textarea{
+#contact-form textarea {
   min-height: 100px;
   font-size: 14px;
 }
-.input-field{
+
+.input-field {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -501,7 +518,8 @@ box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
   border: 1px solid var(--borderColor);
   font-size: 14px;
 }
-#submit-btn{
+
+#submit-btn {
   margin-top: 10px;
   width: 100%;
   padding-top: 10px;
@@ -510,17 +528,18 @@ box-shadow: -15px 15px 10px 2px rgba(117,117,117,1);
   background-color: var(--buttonColor);
   border-radius: 10px;
 }
+
 #success-message-container {
   text-align: center;
   margin-top: 20px;
 }
 
-#success-message-container p{
-  color:green;
+#success-message-container p {
+  color: green;
   margin-bottom: 30px;
 }
 
-.img-wrapper{
+.img-wrapper {
   height: 223px;
   width: 100%;
 }
@@ -548,8 +567,8 @@ footer {
   margin: 0 auto;
 }
 
-.footer-content img{
-  width:45px;
+.footer-content img {
+  width: 45px;
   height: 45px;
   color: white;
 }

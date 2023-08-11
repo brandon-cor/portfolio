@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #f6f6f6;
+  --mainColor: #e9e9e9;
   --secondaryColor: #fff;
   --borderColor: #c1c1c1;
   --mainText: black;
@@ -35,14 +35,12 @@ nav {
 /* Show the hamburger menu and hide the regular menu on smaller screens */
 @media (max-width: 700px) {
 
-  .greeting-wrapper h1,
-  .greeting-wrapper p {
-    display: none;
+  #greeting-wrapper {
+    text-align: center;
   }
 
-  .mobile-name {
-    display: block;
-    /* Show the "Brandon" text */
+  .about-wrapper {
+    gap: 50px !important;
   }
 
   .hamburger {
@@ -89,7 +87,7 @@ nav {
   /* Font color */
   background-color: transparent;
   /* Transparent background */
-  border: 2px solid #333;
+  border: 2px solid var(--themeDotBorder);
   /* Border */
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -229,8 +227,12 @@ ul {
   justify-content: center;
 }
 
+.greeting-wrapper p {
+  margin-bottom: 50px;
+}
+
 #greeting-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: -15px;
 }
 
 .mobile-name {
@@ -308,6 +310,10 @@ nav ul li a:hover {
   margin: 5px;
 }
 
+.tutoring-wrapper {
+  padding-bottom: 20px;
+}
+
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -330,8 +336,7 @@ nav ul li a:hover {
 }
 
 .left-column-pic {
-  -webkit-animation: morph 4s ease-in-out infinite;
-  animation: morph 8s ease-in-out infinite;
+  animation: morph 5s ease-in-out infinite;
   background-image: url(/assets/images/Brandon.jpeg);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -410,9 +415,9 @@ nav ul li a:hover {
   width: 260px;
   background-color: var(--mainColor);
   padding: 15px;
-  -webkit-box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
-  -moz-box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
-  box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
+  border: 2px solid var(--borderColor);
+  border-radius: 5px;
+
 }
 
 
@@ -456,7 +461,8 @@ nav ul li a:hover {
 
 #social_img {
   width: 80%;
-  border: 2px solid var(--themeDotBorder);
+  border: 2px solid var(--borderColor);
+  border-radius: 5px;
 }
 
 #skills ul li {
@@ -471,15 +477,39 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   transition: opacity 0.3s;
+
 }
 
-.thumbnail:hover img {
-  opacity: 0;
+.projects img {
+  width: 70%;
 }
 
-.thumbnail:hover p {
-  opacity: 1;
+.projects img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+  -webkit-box-shadow: -15px 15px 21px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px 15px 21px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -15px 15px 21px -14px rgba(0, 0, 0, 0.75);
+  border: 2px solid var(--borderColor);
+  border-radius: 5px;
+
+
 }
+
+.main-container .post-wrapper .project img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project {
+  -webkit-box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
+  -moz-box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
+  box-shadow: -15px 15px 10px 2px rgba(117, 117, 117, 1);
+}
+
+
 
 .post-wrapper {
   display: grid;

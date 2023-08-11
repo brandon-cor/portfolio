@@ -27,13 +27,13 @@
 			<nav>
 				<ul>
 					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#post">Projects</a></li>
+					<li><a href="#post">Services</a></li>
 					<li><a href="#tutoring">Tutoring</a></li>
-					<li><a href="#contact-form">Contact</a></li>
+					<li><a href="#projects">Past Projects</a></li>
 				</ul>
 				<div class="hover-square"></div>
 				<div class="book-session">
-					<a href="#tutoring" class="book-session-button">Book a Session</a>
+					<a href="#contact-form" class="book-session-button">Contact me</a>
 				</div>
 			</nav>
 		</header>
@@ -54,9 +54,6 @@
 							<div id="dot-2" class="browser-dot"></div>
 							<div id="dot-3" class="browser-dot"></div>
 						</div>
-						<ul id="navigation">
-							<li><a href="mailto:15brandon51@gmail.com">Contact Me!</a></li>
-						</ul>
 					</div>
 					<div class="left-column">
 						<div class="left-column-pic">
@@ -68,9 +65,10 @@
 								<div id="preview">
 									<h3>Welcome</h3>
 									<p>
-										I am a Developer based in California. I currently
-										attend UCSC and am entering my third year as a computer
-										science student.
+										I am a developer <strong>based in California.</strong> I currently
+										work for Admissions at UC Santa Cruz and am also entering my <strong>third year</strong> as a
+										<strong>computer
+											science student.</strong>
 									</p>
 								</div>
 							</div>
@@ -131,7 +129,7 @@
 	</section>
 	<section class="s1">
 		<div class="main-container" id="post">
-			<h3 style="text-align: center">What Can I Do?</h3>
+			<h3 style="text-align: center">What can I do?</h3>
 			<div class="post-wrapper">
 				<div class="post">
 					<div class="img-wrapper">
@@ -219,37 +217,82 @@
 		<div class="main-container">
 			<div class="tutoring-wrapper" id="tutoring">
 				<div class="tutoring-info">
-					<h3 style="text-align: center">Offering Private Tutoring!</h3>
+					<h3 style="text-align: center">I also teach!</h3>
 					<p>
 						I'm passionate about teaching Python, a language known for its
 						popularity and beginner-friendly nature. I've successfully taught
 						students of all ages, from first graders to adults. But my
 						expertise isn't limited to Python. I'm well-versed in various
 						programming languages and can provide assistance across different
-						areas of programming. So, whether you need help with Python or any
-						other language, I offer personalized tutoring services tailored to
-						your or your child's specific needs and goals.
+						areas of programming.
 					</p>
 
 					<p>
-						I charge $40 for 2-on-1 sessions and $50 for 1-on-1 sessions. To
+						I charge <strong>$30 for 1:2</strong> sessions and <strong>$40 for 1:1 sessions</strong>. To
 						put that into perspective, most larger businesses can charge up to
 						$600 per month or $150 per session if you commit to weekly
-						lessons. My goal is to provide quality lessons at a reasonable
-						price.
+						lessons.
 					</p>
 
 					<p>
-						If you're interested in my tutoring services or if you have any
-						questions, don't hesitate to get in touch. You can reach out to me
-						through the contact form below or directly email me at
-						15brandon51@gmail.com.
+						If you or someone you know are interested, please <strong>fill out the form at the bottom </strong>or
+						<strong>directly email me at
+							15brandon51@gmail.com.</strong>
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="s1">
+		<div class="main-container" id="projects">
+			<h3 style="text-align: center;">Some of my past projects</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="projects">
+						<img class="thumbnail" src="assets/images/chicagowoodfloor.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Built with WordPress</h6>
+							<p class="post-intro">Designed an E-Commerce page for a fictitous wood floor business using WordPress,
+								Storefront, and Woocommerce. Hosted on MAMP PRO.</p>
+							<a href="https://github.com/brandon-cor/chicagowoodfloor">Source Code</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="projects">
+						<img class="thumbnail" src="assets/images/phpcrud.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Built with PHP</h6>
+							<p class="post-intro">Designed a basic CRUD application which kept track of blogs. It is allows user to
+								Add, Edit, and Delete blog posts. Hosted on MAMP PRO.</p>
+							<a href="https://github.com/brandon-cor/CRUD">Source Code</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="projects">
+						<img class="thumbnail" src="assets/images/playeranalysis.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Built with Python</h6>
+							<p class="post-intro">Created a python script which is intended to scrape through Excel sheets of
+								USL&trade;
+								soccer player
+								data and return a FIFA&trade;.
+								Work in progress.
+							</p>
+							<a href="https://github.com/brandon-cor/playeranalysis">Source Code</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="s2">
 		<div class="main-container">
 			<h3 style="text-align: center">Get in touch with me!</h3>
 			<form id="contact-form" method="POST" data-netlify="true" netlify>
@@ -265,7 +308,7 @@
 		</div>
 	</section>
 	<script>
-		const phrases = ['Web Development', 'Python Tutoring', 'Software Development'];
+		const phrases = ['Web Development', 'Software Development', 'Private Tutoring'];
 		let phraseIndex = 0;
 		let letterIndex = 0;
 		let currentPhrase = [];

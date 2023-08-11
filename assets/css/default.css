@@ -15,6 +15,14 @@ nav {
   align-items: center;
 }
 
+.right-side-nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .hamburger {
   font-size: 2em;
   display: none;
@@ -33,7 +41,7 @@ nav {
 }
 
 /* Show the hamburger menu and hide the regular menu on smaller screens */
-@media (max-width: 700px) {
+@media (max-width: 730px) {
 
   #greeting-wrapper {
     text-align: center;
@@ -43,20 +51,13 @@ nav {
     gap: 50px !important;
   }
 
-  .hamburger {
-    display: block;
-    size: 20px;
-    padding: 25px;
+  nav .right-side-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .hamburger img {
-    width: 32px;
-    /* Reduce the width of the menu image */
-    height: 32px;
-    /* Reduce the height of the menu image */
-  }
-
-  header nav {
+  header nav ul {
     display: none;
     /* This will hide the entire navigation bar */
   }
@@ -74,9 +75,12 @@ nav {
   }
 }
 
-.book-session {
-  text-align: right;
-  /* Align the content to the right */
+
+
+.social img {
+  width: 45px;
+  height: 45px;
+  padding-right: 16px;
 }
 
 .book-session-button {

@@ -48,7 +48,7 @@ nav {
   }
 
   .about-wrapper {
-    gap: 50px !important;
+    gap: 30px !important;
   }
 
   nav .right-side-nav {
@@ -74,8 +74,6 @@ nav {
     border-color: black;
   }
 }
-
-
 
 .social img {
   width: 45px;

@@ -21,27 +21,29 @@
 	<section class="s1-nav">
 		<header>
 			<nav>
-				<ul>
-					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#post">Services</a></li>
-					<li><a href="#tutoring">Tutoring</a></li>
-					<li><a href="#projects">Previous Work</a></li>
-				</ul>
-				<div class="hover-square"></div>
-				<div class="right-side-nav">
-					<div class="social"><a href="https://www.linkedin.com/in/brandon-corona-bhardwaj/" target="_blank">
-							<img src="assets/images/linkedin.svg" alt="linkedin">
-						</a>
-						<a href="https://github.com/brandon-cor" target="_blank">
-							<img src="assets/images/github-mark.svg" alt="github">
-						</a></div>
-					<div class="book-session">
-
-						<a href="#contact-form" class="book-session-button">Email Me</a>
-					</div>
+			  <div class="hamburger">
+				<img src="assets/images/hamburger-icon.png" alt="Menu">
+			  </div>
+			  <ul class="nav-links">
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#post">Services</a></li>
+				<li><a href="#projects">Previous Work</a></li>
+			  </ul>
+			  <div class="right-side-nav">
+				<div class="social">
+				  <a href="https://www.linkedin.com/in/brandon-corona-bhardwaj/" target="_blank">
+					<img src="assets/images/linkedin.svg" alt="linkedin">
+				  </a>
+				  <a href="https://github.com/brandon-cor" target="_blank">
+					<img src="assets/images/github-mark.svg" alt="github">
+				  </a>
 				</div>
+				<div class="book-session">
+				  <a href="#contact-form" class="book-session-button">Contact Me</a>
+				</div>
+			  </div>
 			</nav>
-		</header>
+		  </header>
 
 		<section class="s1">
 			<div class="main-container">
@@ -284,7 +286,7 @@
 		</div>
 	</section>
 	<script>
-		const phrases = ['Web Development', 'Software Development', 'Private Tutoring'];
+		const phrases = ['Drupal Development', 'Software Development', 'WordPress Development'];
 		let phraseIndex = 0;
 		let letterIndex = 0;
 		let currentPhrase = [];
@@ -331,15 +333,13 @@
 	<script>
 		// Get the hamburger menu button and the navigation list
 		const hamburger = document.querySelector('.hamburger');
-		const navList = document.querySelector('nav ul');
+		const navLinks = document.querySelector('.nav-links');
+		const rightSideNav = document.querySelector('.right-side-nav');
 
 		// Toggle the display of the navigation list when the hamburger menu is clicked
 		hamburger.addEventListener('click', () => {
-			if (navList.style.display === 'none') {
-				navList.style.display = 'block';
-			} else {
-				navList.style.display = 'none';
-			}
+		navLinks.classList.toggle('nav-active');
+		rightSideNav.classList.toggle('nav-active');
 		});
 	</script>
 	<script>
@@ -407,7 +407,7 @@
 				});
 		});
 	</script>
-
+	
 </body>
 
 </html>

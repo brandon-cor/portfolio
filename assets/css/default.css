@@ -25,41 +25,44 @@ nav {
 
 .hamburger {
   font-size: 2em;
-  display: none;
   background: none;
   color: black;
   border: none;
-  padding: 50px;
+  display: none;
+  cursor: pointer;
 }
 
 .hamburger img {
   width: 32px;
-  /* Reduce the width of the menu image */
   height: 32px;
-  /* Reduce the height of the menu image */
-
 }
 
 /* Show the hamburger menu and hide the regular menu on smaller screens */
 @media (max-width: 730px) {
+  .hamburger {
+    display: block;
+  }
 
-  #greeting-wrapper {
+  .nav-links,
+  .right-side-nav {
+    display: none;
+    flex-direction: column;
     text-align: center;
   }
 
-  .about-wrapper {
-    gap: 30px !important;
-  }
-
-  nav .right-side-nav {
+  .nav-links.nav-active,
+  .right-side-nav.nav-active {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  header nav ul {
-    display: none;
-    /* This will hide the entire navigation bar */
+  .nav-links li,
+  .right-side-nav .social,
+  .right-side-nav .book-session {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
   }
 }
 

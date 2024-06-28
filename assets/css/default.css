@@ -7,6 +7,8 @@
   --themeDotBorder: #24292e;
   --previewShadow: #f0ead6;
   --buttonColor: black;
+  --contrastBackground: #333; /* Contrast background color */
+  --contrastTextColor: #fff; /* Contrast text color */
 }
 
 nav {
@@ -37,7 +39,6 @@ nav {
   height: 32px;
 }
 
-/* Show the hamburger menu and hide the regular menu on smaller screens */
 @media (max-width: 730px) {
   .hamburger {
     display: block;
@@ -48,11 +49,18 @@ nav {
     display: none;
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
 
   .nav-links.nav-active,
   .right-side-nav.nav-active {
     display: flex;
+  }
+
+  .nav-links.nav-background,
+  .right-side-nav.nav-background {
+    background-color: var(--contrastBackground);
+    color: var(--contrastTextColor);
   }
 
   .nav-links li,
@@ -63,6 +71,11 @@ nav {
 
   nav ul li a {
     padding: 10px;
+    color: var(--contrastTextColor);
+  }
+
+  nav ul li a:hover {
+    color: var(--mainColor);
   }
 }
 

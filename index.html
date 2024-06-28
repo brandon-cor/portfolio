@@ -338,9 +338,11 @@
 
 		// Toggle the display of the navigation list when the hamburger menu is clicked
 		hamburger.addEventListener('click', () => {
-		navLinks.classList.toggle('nav-active');
-		rightSideNav.classList.toggle('nav-active');
-		});
+      navLinks.classList.toggle('nav-active');
+      rightSideNav.classList.toggle('nav-active');
+      navLinks.classList.toggle('nav-background');
+      rightSideNav.classList.toggle('nav-background');
+    });
 	</script>
 	<script>
 		// Function to handle smooth scrolling

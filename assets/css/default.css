@@ -101,7 +101,7 @@ nav {
   filter: grayscale(10%) brightness(0%) invert(90%);
 }
 .social a img:hover{
-  transition: background-color 0.3s ease, color 0.3s ease;
+  filter: grayscale(0%) brightness(0%) invert(10%);
 }
 
 .social img {
@@ -267,6 +267,7 @@ ul {
 }
 
 #greeting-wrapper {
+  margin-top: -10px;
   margin-bottom: -15px;
   color: var(--mainColor)
 }

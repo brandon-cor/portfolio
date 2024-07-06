@@ -556,7 +556,7 @@ nav ul li a:hover {
 #skills {
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--previewShadow);
+  background-color: #c7baa7;
 }
 
 #social_img {
@@ -567,7 +567,7 @@ nav ul li a:hover {
 
 #skills ul li {
   margin-bottom: 5px;
-  color: var(--mainColor)
+  color: var(--mainColor);
 }
 
 .post img {

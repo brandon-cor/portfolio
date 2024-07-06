@@ -39,8 +39,23 @@ nav {
   width: 50px;
   filter: grayscale(10%) brightness(0%) invert(89%);
 }
-
+.mobile-header{
+  display:none;
+}
 @media (max-width: 730px) {
+  .mobile-header{
+    display:inherit;
+  }
+  .mobile-header h1{
+    margin:0px;
+    color: var(--mainColor);
+    font-size:29px;
+  }
+
+  .greeting-wrapper{
+    display: none !important;
+  }
+
   .hamburger {
     display: block;
   }

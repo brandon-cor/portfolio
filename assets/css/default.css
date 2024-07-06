@@ -215,6 +215,11 @@ ul {
 }
 
 /* overflow property removes the extra space at the top*/
+.s1-banner{
+  background-color: #f0fff0;
+  overflow: auto;
+}
+
 .s1 {
   background-color: var(--mainColor);
   overflow: auto;

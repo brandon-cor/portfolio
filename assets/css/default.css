@@ -215,6 +215,12 @@ ul {
 }
 
 /* overflow property removes the extra space at the top*/
+.social a img {
+  fill: #333; /* or any color you prefer */
+  width: 45px;
+  height: 45px;
+}
+
 .s1-banner{
   background-color: #f0fff0;
   overflow: auto;

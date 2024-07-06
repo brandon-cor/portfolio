@@ -38,6 +38,7 @@ nav {
 .hamburger img {
   width: 32px;
   height: 32px;
+  filter: grayscale(10%) brightness(0%) invert(89%);
 }
 
 @media (max-width: 730px) {
@@ -144,7 +145,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: #333;
+  color: var(--mainColor);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -251,7 +252,6 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--mainColor)
 }
 
 .greeting-wrapper p {
@@ -260,6 +260,7 @@ ul {
 
 #greeting-wrapper {
   margin-bottom: -15px;
+  color: var(--mainColor)
 }
 
 .mobile-name {

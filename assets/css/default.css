@@ -36,8 +36,7 @@ nav {
 }
 
 .hamburger img {
-  width: 32px;
-  height: 32px;
+  width: 50px;
   filter: grayscale(10%) brightness(0%) invert(89%);
 }
 
@@ -78,6 +77,11 @@ nav {
 
   nav ul li a:hover {
     color: var(--contrastTextColor);
+  }
+
+  #greeting-wrapper {
+    top: 5px; /* Adjust for mobile view */
+    right: 5px; /* Adjust for mobile view */
   }
 }
 

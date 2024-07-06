@@ -100,7 +100,7 @@ nav {
   filter: grayscale(10%) brightness(0%) invert(90%);
 }
 .social a img:hover{
-  filter: grayscale(0%) brightness(0%) invert(10%);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social img {

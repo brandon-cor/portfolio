@@ -82,6 +82,7 @@ nav {
   #greeting-wrapper {
     top: 5px; /* Adjust for mobile view */
     right: 5px; /* Adjust for mobile view */
+    text-align: center;
   }
 }
 

@@ -99,6 +99,9 @@ nav {
 .social a img {
   filter: grayscale(10%) brightness(0%) invert(90%);
 }
+.social a img:hover{
+  filter: grayscale(0%) brightness(0%) invert(10%);
+}
 
 .social img {
   width: 45px;

@@ -567,21 +567,20 @@ nav ul li a:hover {
 
 #skills ul li {
   margin-bottom: 5px;
-  color: var(--mainColor);
+  color: var(--mainText);
 }
 
 .post img {
-  width: 70%;
-}
-
-.post img {
-  width: 100%;
-  height: 100%;
   transition: opacity 0.3s;
 }
 
 .projects img {
   width: 70%;
+}
+
+.post #thumbnail {
+  width: 60%;
+  height: 100%;
 }
 
 .projects img {
